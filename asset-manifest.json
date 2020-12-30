@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Vinay-Komaravolu-Portfolio/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/Vinay-Komaravolu-Portfolio/static/js/main.28584493.chunk.js",
+    "main.js.map": "/Vinay-Komaravolu-Portfolio/static/js/main.28584493.chunk.js.map",
+    "runtime-main.js": "/Vinay-Komaravolu-Portfolio/static/js/runtime-main.50842121.js",
+    "runtime-main.js.map": "/Vinay-Komaravolu-Portfolio/static/js/runtime-main.50842121.js.map",
+    "static/js/2.8bbadcd0.chunk.js": "/Vinay-Komaravolu-Portfolio/static/js/2.8bbadcd0.chunk.js",
+    "static/js/2.8bbadcd0.chunk.js.map": "/Vinay-Komaravolu-Portfolio/static/js/2.8bbadcd0.chunk.js.map",
+    "static/js/3.d5745bf9.chunk.js": "/Vinay-Komaravolu-Portfolio/static/js/3.d5745bf9.chunk.js",
+    "static/js/3.d5745bf9.chunk.js.map": "/Vinay-Komaravolu-Portfolio/static/js/3.d5745bf9.chunk.js.map",
+    "index.html": "/Vinay-Komaravolu-Portfolio/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/Vinay-Komaravolu-Portfolio/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.8bbadcd0.chunk.js.LICENSE.txt": "/Vinay-Komaravolu-Portfolio/static/js/2.8bbadcd0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Vinay-Komaravolu-Portfolio/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50842121.js",
+    "static/js/2.8bbadcd0.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.28584493.chunk.js"
+  ]
+}
