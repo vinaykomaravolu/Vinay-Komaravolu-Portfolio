@@ -25,7 +25,7 @@ jobs:
 
       - name: Deploy to Github Pages 
         run: |
-          git config --global user.email ${{secrets.GITHUB_EMAIL}}
-          git config --global user.name ${{secrets.GITHUB_USERNAME}}
-          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{secrets.GITHUB_USERNAME}}/Vinay-Komaravolu-Portfolio.git
+          git config --global user.email ${{ secrets.EMAIL }}
+          git config --global user.name ${{ secrets.USERNAME }}
+          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ secrets.USERNAME }}/Vinay-Komaravolu-Portfolio.git
           npm run deploy
