@@ -16,14 +16,16 @@ body {
   background: #0c0f13;
   margin: 0 !important;
   padding: 0 !important;
+  overflow: overlay;
 }
 
 .element {
   height: 100vh;
   background-color: #0c0f13;
   font-size: 45px;
-  padding-top: 55px;
-  padding-left: 10px;
+  overflow-y: auto;
+  margin: 2%;
+  padding-top: 2%;
 }
 
 .element.no-padding {
@@ -32,6 +34,33 @@ body {
 
 .active {
   color: #8b8b8b !important;
+}
+
+::-webkit-scrollbar {
+  width: 25px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f2aa4c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f2aa4c;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f2aa4c;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8b8b8b;
 }
 
 @tailwind base;
