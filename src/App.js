@@ -115,7 +115,7 @@ class App extends React.Component {
                     <Projects />
                 </Element>
 
-                <Element name="projects" className="w-screen h-48">
+                <Element name="end" className="w-screen h-48">
                     <End toTop={this.scrollToTop} />
                 </Element>
 
