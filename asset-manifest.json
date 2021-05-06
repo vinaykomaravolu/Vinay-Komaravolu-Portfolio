@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c524848e.chunk.css",
-    "main.js": "/static/js/main.992fd045.chunk.js",
-    "main.js.map": "/static/js/main.992fd045.chunk.js.map",
+    "main.js": "/static/js/main.1499b813.chunk.js",
+    "main.js.map": "/static/js/main.1499b813.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1fc96b89.js",
     "runtime-main.js.map": "/static/js/runtime-main.1fc96b89.js.map",
     "static/css/2.c15a15ea.chunk.css": "/static/css/2.c15a15ea.chunk.css",
@@ -14,7 +14,7 @@
     "static/css/2.c15a15ea.chunk.css.map": "/static/css/2.c15a15ea.chunk.css.map",
     "static/css/main.c524848e.chunk.css.map": "/static/css/main.c524848e.chunk.css.map",
     "static/js/2.d0ed43bf.chunk.js.LICENSE.txt": "/static/js/2.d0ed43bf.chunk.js.LICENSE.txt",
-    "static/media/Vinay_Komaravolu_Resume.6563f407.pdf": "/static/media/Vinay_Komaravolu_Resume.6563f407.pdf",
+    "static/media/Vinay_Komaravolu_Resume.ed126e9b.pdf": "/static/media/Vinay_Komaravolu_Resume.ed126e9b.pdf",
     "static/media/cpu.55fb8710.glb": "/static/media/cpu.55fb8710.glb",
     "static/media/styles.css": "/static/media/revicons.e8746a62.woff",
     "static/media/vinay3d.44bc44a9.glb": "/static/media/vinay3d.44bc44a9.glb"
@@ -24,6 +24,6 @@
     "static/css/2.c15a15ea.chunk.css",
     "static/js/2.d0ed43bf.chunk.js",
     "static/css/main.c524848e.chunk.css",
-    "static/js/main.992fd045.chunk.js"
+    "static/js/main.1499b813.chunk.js"
   ]
 }
