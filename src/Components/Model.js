@@ -31,7 +31,7 @@ function Asset({ scale = 1.0, ...props }) {
     });
 
     return (
-        <primitive {...props} object={scene} rotation={[0.1, -0.3, 0]} position={[0, -20,]} ref={group} />
+        <primitive {...props} object={scene} rotation={[0.1, -0.3, 0]} position={[0, -20, -3]} ref={group} />
     );
 }
 function Model() {
