@@ -7,6 +7,8 @@ import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
+import Home from './Pages/Home';
+import End from './Pages/End';
 import { motion } from "framer-motion"
 class App extends React.Component {
 
@@ -89,6 +91,10 @@ class App extends React.Component {
 
                 </nav>
 
+                <Element name="home" className="element" >
+                    <Home />
+                </Element>
+
                 <Element name="aboutme" className="element" >
                     <About />
                 </Element>
@@ -109,8 +115,11 @@ class App extends React.Component {
                     <Projects />
                 </Element>
 
+                <Element name="projects" className="w-screen h-48">
+                    <End toTop={this.scrollToTop} />
+                </Element>
 
-            </div>
+            </div >
         );
     }
 };
