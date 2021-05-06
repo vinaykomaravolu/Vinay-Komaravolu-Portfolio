@@ -17,7 +17,7 @@ function ExperienceCard({ experienceData }) {
                     <div id="Card" className="grid grid-cols-1 text-2xl divide-y-2 divide-primary">
                         <div className="p-4 font-bold" id="Title">{experienceData.title}</div>
                         <div className="text-lg text-white p-4">{experienceData.description}</div>
-                        <div className="pl-4 pt-1 pr-4 font-bold text-xl" id="Title">Work Term</div>
+                        <div className="pl-4 pt-1 pr-4 font-bold text-xl" id="Title">Responsibilities</div>
                         <div
 
                             className="m-1.5 pr-2 pl-2 pt-1 pb-1 rounded-2xl text-sm font-medium text-white">
@@ -26,7 +26,7 @@ function ExperienceCard({ experienceData }) {
                     </div>
                 </div>
                 <div className="col-span-1">
-                    <div className="pl-4 pt-1 pr-4 font-bold text-xl" id="Title">Work Done</div>
+                    <div className="pl-4 pt-1 pr-4 font-bold text-xl" id="Title"></div>
                     <div className=" w-full h-auto pl-2 pb-4 pr-2 m-2 h-8 overflow-y-hidden">
                         {experienceData.workdone.map((work) => {
                             return (<div className="bg-primary2 rounded-2xl p-2 m-2 h-full">
