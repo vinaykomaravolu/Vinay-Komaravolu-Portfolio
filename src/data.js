@@ -98,7 +98,7 @@ export const educationData = {
     description: "University of toronto",
     image: "/images/uoft.png",
     degree: "Bachelors  Computer Science",
-    GPA: "3.5",
+    GPA: "3.6",
     date: "September 2016 - April 2021",
     courses: ["Computer Graphics", "Web Dev", "Programming Languages", "Software Design", "Business of Software", "Engineering Large Softwares", "Operating Systems", "Human Computer Interaction", "Artifical Intelligence", "Algorithm Design", "Video Game Design", "Machine Learning", "Software Tools/ System Programming", "Statistics & Probability", "Linear Algebra"],
 }
