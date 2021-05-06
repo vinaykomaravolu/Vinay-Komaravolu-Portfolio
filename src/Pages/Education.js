@@ -27,6 +27,18 @@ function Education() {
                                     className="m-2 pr-2 pl-2 pt-1 pb-1 rounded-2xl text-base font-medium text-white">
                                     {educationData.date}
                                 </div>
+                                <div className="pl-4 pt-1 pr-4 font-bold text-xl" id="Title">Degree</div>
+                                <div
+
+                                    className="m-2 pr-2 pl-2 pt-1 pb-1 rounded-2xl text-base font-medium text-white">
+                                    {educationData.degree}
+                                </div>
+                                <div className="pl-4 pt-1 pr-4 font-bold text-xl" id="Title">GPA</div>
+                                <div
+
+                                    className="m-2 pr-2 pl-2 pt-1 pb-1 rounded-2xl text-base font-medium text-white">
+                                    {educationData.GPA}
+                                </div>
                                 <div className="pl-4 pt-1 pr-4 font-bold text-xl" id="Title">Courses Completed</div>
                                 <div className="flex flex-wrap pt-4 pb-4 pr-2 pl-2">{educationData.courses.map((item) => {
                                     return <Chip customClass="bg-primary text-white border-2 border-secondary" text={item} />

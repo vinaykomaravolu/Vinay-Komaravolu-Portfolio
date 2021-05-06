@@ -57,7 +57,7 @@ class App extends React.Component {
                     </div>
                     {this.state.toTopEnable ? <div class="fixed animate-bounce flex flex-nowrap bottom-16 focus:outline-none right-0 p-5">
                         <button data-tip data-for='gototop' type="button" onClick={this.scrollToTop} className="focus:outline-none  h-10 w-10 p-3 text-lg text-secondary hover:text-secondaryh">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
                                 <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                             </svg>
                         </button>
@@ -92,7 +92,7 @@ class App extends React.Component {
                 </nav>
 
                 <Element name="home" className="element" >
-                    <Home />
+                    <Home isTop={!this.state.toTopEnable} />
                 </Element>
 
                 <Element name="aboutme" className="element" >

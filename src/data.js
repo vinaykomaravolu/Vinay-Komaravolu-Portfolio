@@ -78,7 +78,7 @@ export const experienceData = [
         title: "AMD Vulkan Developer",
         description: "After my 3rd year at University of Toronto I was fortunate enough to get a Job at AMD as a Vulkan Developer where I was able to partake in challanges just like a regular employer. It was here that I was able to meet some amazing people who have helped me through my journey!",
         image: "/images/amd.jpg",
-        tags: ["Graphics", "Vulkan", "Google Stadia"],
+        tags: ["Graphics", "Vulkan", "Google Stadia", "C++", "Python", "Visual Studio", "Drivers", "Virtualization"],
         date: "May 2019 - May 2020",
         workdone: [
             {
@@ -97,6 +97,8 @@ export const educationData = {
     title: "University of Toronto",
     description: "University of toronto",
     image: "/images/uoft.png",
+    degree: "Bachelors  Computer Science",
+    GPA: "3.5",
     date: "September 2016 - April 2021",
     courses: ["Computer Graphics", "Web Dev", "Programming Languages", "Software Design", "Business of Software", "Engineering Large Softwares", "Operating Systems", "Human Computer Interaction", "Artifical Intelligence", "Algorithm Design", "Video Game Design", "Machine Learning", "Software Tools/ System Programming", "Statistics & Probability", "Linear Algebra"],
 }
