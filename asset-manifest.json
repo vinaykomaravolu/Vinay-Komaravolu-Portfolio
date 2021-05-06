@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/Vinay-Komaravolu-Portfolio/static/css/main.7b859fa6.chunk.css",
-    "main.js": "/Vinay-Komaravolu-Portfolio/static/js/main.c937759f.chunk.js",
-    "main.js.map": "/Vinay-Komaravolu-Portfolio/static/js/main.c937759f.chunk.js.map",
-    "runtime-main.js": "/Vinay-Komaravolu-Portfolio/static/js/runtime-main.27ce63fc.js",
-    "runtime-main.js.map": "/Vinay-Komaravolu-Portfolio/static/js/runtime-main.27ce63fc.js.map",
+    "main.css": "/Vinay-Komaravolu-Portfolio/static/css/main.43d165d1.chunk.css",
+    "main.js": "/Vinay-Komaravolu-Portfolio/static/js/main.7a84ee5d.chunk.js",
+    "main.js.map": "/Vinay-Komaravolu-Portfolio/static/js/main.7a84ee5d.chunk.js.map",
+    "runtime-main.js": "/Vinay-Komaravolu-Portfolio/static/js/runtime-main.7327e0e5.js",
+    "runtime-main.js.map": "/Vinay-Komaravolu-Portfolio/static/js/runtime-main.7327e0e5.js.map",
     "static/css/2.1bba4b41.chunk.css": "/Vinay-Komaravolu-Portfolio/static/css/2.1bba4b41.chunk.css",
-    "static/js/2.9f94b9eb.chunk.js": "/Vinay-Komaravolu-Portfolio/static/js/2.9f94b9eb.chunk.js",
-    "static/js/2.9f94b9eb.chunk.js.map": "/Vinay-Komaravolu-Portfolio/static/js/2.9f94b9eb.chunk.js.map",
-    "static/js/3.bd9b3ea3.chunk.js": "/Vinay-Komaravolu-Portfolio/static/js/3.bd9b3ea3.chunk.js",
-    "static/js/3.bd9b3ea3.chunk.js.map": "/Vinay-Komaravolu-Portfolio/static/js/3.bd9b3ea3.chunk.js.map",
+    "static/js/2.59f3d3f5.chunk.js": "/Vinay-Komaravolu-Portfolio/static/js/2.59f3d3f5.chunk.js",
+    "static/js/2.59f3d3f5.chunk.js.map": "/Vinay-Komaravolu-Portfolio/static/js/2.59f3d3f5.chunk.js.map",
+    "static/js/3.4117b76e.chunk.js": "/Vinay-Komaravolu-Portfolio/static/js/3.4117b76e.chunk.js",
+    "static/js/3.4117b76e.chunk.js.map": "/Vinay-Komaravolu-Portfolio/static/js/3.4117b76e.chunk.js.map",
     "index.html": "/Vinay-Komaravolu-Portfolio/index.html",
     "static/css/2.1bba4b41.chunk.css.map": "/Vinay-Komaravolu-Portfolio/static/css/2.1bba4b41.chunk.css.map",
-    "static/css/main.7b859fa6.chunk.css.map": "/Vinay-Komaravolu-Portfolio/static/css/main.7b859fa6.chunk.css.map",
-    "static/js/2.9f94b9eb.chunk.js.LICENSE.txt": "/Vinay-Komaravolu-Portfolio/static/js/2.9f94b9eb.chunk.js.LICENSE.txt",
+    "static/css/main.43d165d1.chunk.css.map": "/Vinay-Komaravolu-Portfolio/static/css/main.43d165d1.chunk.css.map",
+    "static/js/2.59f3d3f5.chunk.js.LICENSE.txt": "/Vinay-Komaravolu-Portfolio/static/js/2.59f3d3f5.chunk.js.LICENSE.txt",
     "static/media/Vinay_Komaravolu_Resume.8a4f705e.pdf": "/Vinay-Komaravolu-Portfolio/static/media/Vinay_Komaravolu_Resume.8a4f705e.pdf",
-    "static/media/styles.css": "/Vinay-Komaravolu-Portfolio/static/media/revicons.e8746a62.woff"
+    "static/media/styles.css": "/Vinay-Komaravolu-Portfolio/static/media/revicons.e8746a62.woff",
+    "static/media/vinay3d.44bc44a9.glb": "/Vinay-Komaravolu-Portfolio/static/media/vinay3d.44bc44a9.glb"
   },
   "entrypoints": [
-    "static/js/runtime-main.27ce63fc.js",
+    "static/js/runtime-main.7327e0e5.js",
     "static/css/2.1bba4b41.chunk.css",
-    "static/js/2.9f94b9eb.chunk.js",
-    "static/css/main.7b859fa6.chunk.css",
-    "static/js/main.c937759f.chunk.js"
+    "static/js/2.59f3d3f5.chunk.js",
+    "static/css/main.43d165d1.chunk.css",
+    "static/js/main.7a84ee5d.chunk.js"
   ]
 }
