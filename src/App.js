@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Projects from './Pages/Projects';
+import Skills from './Pages/Skills';
 import { motion } from "framer-motion"
 class App extends React.Component {
 
@@ -39,15 +40,18 @@ class App extends React.Component {
         return (
             <div className="relative z-1090">
                 <nav className="flex top-0 flex-row-reverse bg-primary w-full fixed">
-                    <div className=" z-10 p-2">
+                    <div className=" z-10 pr-4 pt-2 pb-2 bl-2">
                         <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}><Link activeClass="active" className="focus:none aboutme p-3 text-lg text-secondary hover:text-secondaryh" to="aboutme" spy={true} smooth={true} duration={500} >About Me</Link></motion.button>
                         <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}><Link activeClass="active" className="experience  p-3 text-lg text-secondary hover:text-secondaryh" to="experience" spy={true} smooth={true} duration={500}>Experience</Link></motion.button>
-                        <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}><Link activeClass="active" className="education  p-3 text-lg text-secondary hover:text-secondaryh" to="education" spy={true} smooth={true} duration={500}>Education</Link></motion.button>
                         <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}><Link activeClass="active" className="experience  p-3 text-lg text-secondary hover:text-secondaryh" to="experience" spy={true} smooth={true} duration={500}>Experience</Link></motion.button>
+                        <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}><Link activeClass="active" className="education  p-3 text-lg text-secondary hover:text-secondaryh" to="skills" spy={true} smooth={true} duration={500}>Skills</Link></motion.button>
+                        <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}><Link activeClass="active" className="projects  p-3 text-lg text-secondary hover:text-secondaryh" to="projects" spy={true} smooth={true} duration={500}>Projects</Link></motion.button>
+
                     </div>
                     {this.state.toTopEnable ? <div class="fixed animate-bounce flex flex-nowrap bottom-16 focus:outline-none right-0 p-5">
                         <button data-tip data-for='gototop' type="button" onClick={this.scrollToTop} className="focus:outline-none  h-10 w-10 p-3 text-lg text-secondary hover:text-secondaryh">
@@ -89,12 +93,16 @@ class App extends React.Component {
                     <About />
                 </Element>
 
+                <Element name="education" className="element">
+                    <Education />
+                </Element>
+
                 <Element name="experience" className="element">
                     <Experience />
                 </Element>
 
-                <Element name="education" className="element">
-                    <Education />
+                <Element name="skills" className="element">
+                    <Skills />
                 </Element>
 
                 <Element name="projects" className="element">

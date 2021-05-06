@@ -4,7 +4,7 @@ import { educationData } from '../data'
 
 function Education() {
     return (
-        <div id="about" className="flex p-4 flex-col h-full w-full">
+        <div id="education" className="flex p-4 flex-col h-full w-full">
             <div className="text-secondary font-bold pl-4 pr-4">
                 Education
                 </div>

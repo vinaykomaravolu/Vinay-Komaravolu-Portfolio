@@ -100,3 +100,22 @@ export const educationData = {
     date: "September 2016 - April 2021",
     courses: ["Computer Graphics", "Web Dev", "Programming Languages", "Software Design", "Business of Software", "Engineering Large Softwares", "Operating Systems", "Human Computer Interaction", "Artifical Intelligence", "Algorithm Design", "Video Game Design", "Machine Learning", "Software Tools/ System Programming", "Statistics & Probability", "Linear Algebra"],
 }
+
+export const skillsData = [
+    {
+        title: "Technical Languages",
+        content: ["C++", "Javascript", "Typescript", "Python", "C#", "Bash", "GLSL"]
+    },
+    {
+        title: "Web Technologies",
+        content: ["React", "TailwindCSS", "Flask", "Material UI", "Electron", "Github Actions", "MongoDB", "ExpressJs"]
+    },
+    {
+        title: "Graphics Technologies",
+        content: ["OpenGl", "Vulkan", "OpenAL"]
+    },
+    {
+        title: "Tools & Softwares",
+        content: ["Blender", "Unity", "Git", "Visual Studio", "Visual Studio Code", "CMake", "TeamCity", "Perforce", "Docker", "VirtualBox", "Figma"]
+    },
+]
