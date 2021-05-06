@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Element, Events, animateScroll as scroll, scroller } from 'react-scroll';
+import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import Resume from './assets/Vinay_Komaravolu_Resume.pdf';
 import ReactTooltip from 'react-tooltip';
 import About from './Pages/About';
@@ -80,9 +80,9 @@ class App extends React.Component {
                         <motion.a target="_blank"
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
-                            rel="noopener noreferrer" className=" p-3 text-lg text-secondary hover:text-secondaryh" href={Resume} target="_black">
+                            rel="noopener noreferrer" className=" p-3 text-lg text-secondary hover:text-secondaryh" href={Resume}>
                             Resume
-                 </motion.a >
+                        </motion.a >
                         <motion.a whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }} className="p-3 text-lg text-secondary hover:text-secondaryh" href="mailto:vinay.komaravolu@gmail.com">Email</motion.a >
                     </div>

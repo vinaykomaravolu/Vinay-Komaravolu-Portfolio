@@ -1,6 +1,5 @@
 import React from 'react';
 import { experienceData } from '../data';
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ExperienceCard from '../Components/ExperienceCard';
 
