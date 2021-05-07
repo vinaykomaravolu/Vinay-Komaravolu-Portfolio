@@ -5,10 +5,10 @@ import { educationData } from '../data'
 function Education() {
     return (
         <div id="education" className="flex p-4 flex-col h-full w-full">
-            <div className="text-secondary font-bold pl-4 pr-4">
+            <div className="text-secondary font-bold pl-4 pr-4 pb-4">
                 Education
                 </div>
-            <div className="flex flex-nowrwap h-screen justify-center items-center ">
+            <div className="flex flex-nowrwap justify-center items-center ">
 
                 <div
                     className="w-5/6 h-4/5 rounded-lg text-secondary"

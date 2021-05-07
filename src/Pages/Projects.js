@@ -10,7 +10,7 @@ function Projects() {
         <><div className="text-secondary font-bold pl-12 pr-12 pt-4 pb-4">
             Projects
             </div>
-            <div id="projects" className="pl-32 pr-32 w-auto h-6/7">
+            <div id="projects" className="pl-32 pr-32 w-auto h-auto">
                 <div>
                     <Carousel
                         additionalTransfrom={0}

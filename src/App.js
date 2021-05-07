@@ -90,34 +90,36 @@ class App extends React.Component {
                     </div>
 
                 </nav>
+                <div className="flex flex-col">
+                    <Element name="home" className="element" >
+                        <Home isTop={!this.state.toTopEnable} />
+                    </Element>
 
-                <Element name="home" className="element" >
-                    <Home isTop={!this.state.toTopEnable} />
-                </Element>
+                    <Element name="aboutme" className="element" >
+                        <About />
+                    </Element>
 
-                <Element name="aboutme" className="element" >
-                    <About />
-                </Element>
+                    <Element name="education" className="element">
+                        <Education />
+                    </Element>
 
-                <Element name="education" className="element">
-                    <Education />
-                </Element>
+                    <Element name="experience" className="element">
+                        <Experience />
+                    </Element>
 
-                <Element name="experience" className="element">
-                    <Experience />
-                </Element>
+                    <Element name="skills" className="element">
+                        <Skills />
+                    </Element>
 
-                <Element name="skills" className="element">
-                    <Skills />
-                </Element>
+                    <Element name="projects" className="element">
+                        <Projects />
+                    </Element>
 
-                <Element name="projects" className="element">
-                    <Projects />
-                </Element>
+                    <Element name="end" className="w-screen h-48">
+                        <End toTop={this.scrollToTop} />
+                    </Element>
+                </div>
 
-                <Element name="end" className="w-screen h-48">
-                    <End toTop={this.scrollToTop} />
-                </Element>
 
             </div >
         );

@@ -8,14 +8,14 @@ function Skills() {
             <div className="text-secondary font-bold pl-12 pr-12 pt-4 pb-4">
                 Skills
             </div>
-            <div className="m-auto flex justify-center p-52">
+            <div className="m-auto flex flex-row justify-center p-8 w-full">
                 {skillsData.map((skills) => {
                     return (
                         <div className="p-4 m-4 bg-primary2 rounded-3xl font-bold text-secondary text-xl w-auto h-auto">
                             {skills.title}
-                            <div className="flex flex-row flex-wrap pt-6">
+                            <div className="flex flex-row flex-shrink  flex-wrap pt-6">
                                 {skills.content.map((item) => {
-                                    return <Chip customClass="bg-primary border-secondary  text-lg" text={item} />
+                                    return <Chip customClass="bg-primary border-secondary flex-shrink text-lg" text={item} />
                                 })}
                             </div>
                         </div>

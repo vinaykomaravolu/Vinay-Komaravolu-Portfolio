@@ -5,7 +5,7 @@ import ExperienceCard from '../Components/ExperienceCard';
 
 function Experience() {
     return (
-        <div id="experience" className="flex p-4 flex-col h-full w-full">
+        <div id="experience" className="flex p-4 flex-col h-auto w-full">
             <div className="">
                 <div className="text-secondary font-bold pl-10 pr-10">
                     Experience
