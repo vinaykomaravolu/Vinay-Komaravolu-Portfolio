@@ -34,7 +34,6 @@ button {
   border-top: 1px solid #000;
   padding-top: 55px;
   padding-left: 10px;
-  z-index: -1;
 }
 
 .element.no-padding {

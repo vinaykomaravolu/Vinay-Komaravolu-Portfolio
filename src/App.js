@@ -40,9 +40,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="relative z-1090">
+            <div className="relative">
                 <nav className="flex top-0 flex-row-reverse bg-primary w-full fixed">
-                    <div className=" z-10 pr-4 pt-2 pb-2 bl-2">
+                    <div className="pr-4 pt-2 pb-2 bl-2">
                         <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}><Link activeClass="active" className="focus:none aboutme p-3 text-lg text-secondary hover:text-secondaryh" to="aboutme" spy={true} smooth={true} duration={500} >About Me</Link></motion.button>
                         <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
@@ -90,35 +90,33 @@ class App extends React.Component {
                     </div>
 
                 </nav>
-                <div className="flex flex-col">
-                    <Element name="home" className="element" >
-                        <Home isTop={!this.state.toTopEnable} />
-                    </Element>
+                <Element name="home" className="element" >
+                    <Home isTop={!this.state.toTopEnable} />
+                </Element>
 
-                    <Element name="aboutme" className="element" >
-                        <About />
-                    </Element>
+                <Element name="aboutme" className="element" >
+                    <About />
+                </Element>
 
-                    <Element name="education" className="element">
-                        <Education />
-                    </Element>
+                <Element name="education" className="element">
+                    <Education />
+                </Element>
 
-                    <Element name="experience" className="element">
-                        <Experience />
-                    </Element>
+                <Element name="experience" className="element">
+                    <Experience />
+                </Element>
 
-                    <Element name="skills" className="element">
-                        <Skills />
-                    </Element>
+                <Element name="skills" className="element">
+                    <Skills />
+                </Element>
 
-                    <Element name="projects" className="element">
-                        <Projects />
-                    </Element>
+                <Element name="projects" className="element">
+                    <Projects />
+                </Element>
 
-                    <Element name="end" className="w-screen h-48">
-                        <End toTop={this.scrollToTop} />
-                    </Element>
-                </div>
+                <Element name="end" className="w-screen h-48">
+                    <End toTop={this.scrollToTop} />
+                </Element>
 
 
             </div >
