@@ -13,7 +13,7 @@ body,
 }
 
 body {
-  background: #0c0f13;
+  background: auto;
   margin: 0 !important;
   padding: 0 !important;
   overflow: overlay;
@@ -22,7 +22,6 @@ body {
 .element {
   height: auto;
   width: auto;
-  background-color: #0c0f13;
   font-size: 45px;
   margin: 2%;
   padding-top: 2%;

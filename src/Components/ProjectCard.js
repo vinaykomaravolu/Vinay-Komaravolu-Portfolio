@@ -14,13 +14,13 @@ function ProjectCard({ projectData }) {
                 <div id="Card" className="grid grid-cols-1 text-2xl divide-y-2 divide-primary">
 
                     <div className="p-4 font-bold" id="Title">{projectData.title}</div>
-                    <div className="text-lg text-white p-4">{projectData.description}</div>
+                    <div className="text-lg text-primarytext p-4">{projectData.description}</div>
                 </div>
                 <div className="flex flex-wrap">{projectData.tags.map((item) => {
                     return <Chip customClass="bg-secondary text-primary" text={item} />
                 })}</div>
                 <div className="flex flex-wrap">{projectData.tech.map((item) => {
-                    return <Chip customClass="bg-primary text-white border-2 border-secondary" text={item} />
+                    return <Chip customClass="bg-primary text-primarytext border-2 border-secondary" text={item} />
                 })}</div>
             </div>
 

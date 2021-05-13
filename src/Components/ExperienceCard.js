@@ -16,11 +16,11 @@ function ExperienceCard({ experienceData }) {
                 <div className="pl-8 pr-8 col-span-1">
                     <div id="Card" className="grid grid-cols-1 text-2xl divide-y-2 divide-primary">
                         <div className="p-4 font-bold" id="Title">{experienceData.title}</div>
-                        <div className="text-lg text-white p-4">{experienceData.description}</div>
+                        <div className="text-lg text-primarytext p-4">{experienceData.description}</div>
                         <div className="pl-4 pt-1 pr-4 font-bold text-xl" id="Title">Date</div>
                         <div
 
-                            className="m-1.5 pr-2 pl-2 pt-1 pb-1 rounded-2xl text-sm font-medium text-white">
+                            className="m-1.5 pr-2 pl-2 pt-1 pb-1 rounded-2xl text-sm font-medium text-primarytext">
                             {experienceData.date}
                         </div>
                     </div>
@@ -31,7 +31,7 @@ function ExperienceCard({ experienceData }) {
                         {experienceData.workdone.map((work) => {
                             return (<div className="bg-primary2 rounded-2xl p-2 m-2 h-full">
                                 <div className="font-bold text-base" id="Title">{work.header}</div>
-                                <div className="text-base text-white text-base pl-8">
+                                <div className="text-base text-primarytext text-base pl-8">
                                     <ul class="list-disc">
                                         {work.content.map((item) => {
                                             return <li>{item}</li>

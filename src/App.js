@@ -40,7 +40,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="relative">
+            <div className="relative bg-primary">
                 <nav className="flex top-0 flex-row-reverse bg-primary w-full fixed">
                     <div className="pr-4 pt-2 pb-2 bl-2">
                         <motion.button className="focus:outline-none" whileHover={{ scale: 1.1 }}
@@ -90,31 +90,31 @@ class App extends React.Component {
                     </div>
 
                 </nav>
-                <Element name="home" className="element" >
+                <Element name="home" className="element bg-primary" >
                     <Home isTop={!this.state.toTopEnable} />
                 </Element>
 
-                <Element name="aboutme" className="element" >
+                <Element name="aboutme" className="element bg-primary" >
                     <About />
                 </Element>
 
-                <Element name="education" className="element">
+                <Element name="education" className="element bg-primary">
                     <Education />
                 </Element>
 
-                <Element name="experience" className="element">
+                <Element name="experience" className="element bg-primary">
                     <Experience />
                 </Element>
 
-                <Element name="skills" className="element">
+                <Element name="skills" className="element bg-primary">
                     <Skills />
                 </Element>
 
-                <Element name="projects" className="element">
+                <Element name="projects" className="element bg-primary">
                     <Projects />
                 </Element>
 
-                <Element name="end" className="w-screen h-48">
+                <Element name="end" className="w-screen h-48 bg-primary">
                     <End toTop={this.scrollToTop} />
                 </Element>
 
