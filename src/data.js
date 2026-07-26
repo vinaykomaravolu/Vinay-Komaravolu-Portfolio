@@ -39,7 +39,7 @@ export const projectData = [
     link: 'https://github.com/vinaykomaravolu/OpenGL-Graphics-Engine',
     description:
       'A rendering engine built from the ground up with OpenGL, GLFW, C++, and GLSL for loading and viewing textured models.',
-    image: '/images/castle.gif',
+    image: '/images/castle-preview.jpg',
     tags: ['Graphics', 'Model Viewer'],
     tech: ['C++', 'OpenGL', 'OpenAL', 'GLSL', 'GLFW', 'ImGui'],
     spotlight: true,
@@ -161,7 +161,7 @@ export const educationData = {
 export const skillsData = [
   {
     title: 'Languages',
-    content: ['C++', 'JavaScript', 'TypeScript', 'Python', 'C#', 'Bash', 'GLSL'],
+    content: ['C++', 'JavaScript', 'TypeScript', 'Python', 'Perl', 'C#', 'Bash', 'GLSL'],
   },
   {
     title: 'Web',

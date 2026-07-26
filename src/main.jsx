@@ -8,10 +8,10 @@ import App from './App.jsx';
 const theme = {
   primaryColor: 'orange',
   fontFamily:
-    'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+    'Manrope, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
   headings: {
     fontFamily:
-      'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+      '"Space Grotesk", Manrope, ui-sans-serif, system-ui, sans-serif',
     fontWeight: '800',
   },
   radius: {

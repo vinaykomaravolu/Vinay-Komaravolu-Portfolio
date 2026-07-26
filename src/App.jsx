@@ -64,6 +64,15 @@ function ChipGroup({ items, variant = 'light' }) {
   );
 }
 
+function SectionLabel({ index, children }) {
+  return (
+    <Text className="eyebrow">
+      <span>{index}</span>
+      {children}
+    </Text>
+  );
+}
+
 function Header() {
   return (
     <Box component="header" className="site-header">
@@ -115,21 +124,29 @@ function Header() {
 function Hero() {
   return (
     <Box id="top" component="section" className="hero">
+      <Box className="hero-gridlines" aria-hidden="true" />
       <Container size="xl">
         <SimpleGrid cols={{ base: 1, md: 2 }} spacing={{ base: 36, md: 64 }} verticalSpacing={48} className="hero-grid">
           <Stack gap="xl" className="hero-copy">
-            <Badge leftSection={<IconSparkles size={14} />} variant="filled" radius="sm" className="hero-kicker">
-              Graphics-minded software developer
-            </Badge>
+            <Group gap="sm" className="hero-intro">
+              <Badge leftSection={<IconSparkles size={14} />} variant="filled" radius="sm" className="hero-kicker">
+                Graphics-minded software engineer
+              </Badge>
+              <Text className="availability"><span /> NVIDIA / Toronto</Text>
+            </Group>
             <Stack gap="md">
-              <Title className="hero-title">Vinay Komaravolu</Title>
+              <Title className="hero-title">
+                <span>Vinay</span>
+                <span className="hero-title-outline">Komaravolu</span>
+              </Title>
               <Text className="hero-subtitle">
-                I build tools, systems, and web applications with a practical eye for performance, interaction, and craft.
+                I build graphics systems, compilers, and developer tools where performance, precision, and thoughtful interaction meet.
               </Text>
             </Stack>
-            <SimpleGrid cols={{ base: 2, xs: 3 }} spacing="sm" className="highlight-grid">
-              {highlights.map((item) => (
+            <SimpleGrid cols={{ base: 2, xs: 3 }} spacing={0} className="highlight-grid">
+              {highlights.map((item, index) => (
                 <Paper key={item} className="metric" radius="sm">
+                  <Text className="metric-index">{String(index + 1).padStart(2, '0')}</Text>
                   <Text>{item}</Text>
                 </Paper>
               ))}
@@ -137,6 +154,7 @@ function Hero() {
           </Stack>
           <Box className="portrait-wrap">
             <Image src="/images/vinay.png" alt="Vinay Komaravolu" className="portrait" />
+            <Text className="portrait-label">ENGINEERING / VISUAL SYSTEMS</Text>
           </Box>
         </SimpleGrid>
       </Container>
@@ -147,11 +165,21 @@ function Hero() {
 function About() {
   return (
     <Box id="about" component="section" className="section about-band">
-      <Container size="xl">
+      <Container size="xl" className="reveal">
         <SimpleGrid cols={{ base: 1, md: 2 }} spacing={{ base: 28, md: 60 }}>
           <Stack gap="sm">
-            <Text className="eyebrow">About</Text>
+            <SectionLabel index="01">About</SectionLabel>
             <Title order={2}>Engineer with a graphics core and product instincts.</Title>
+            <Group gap="xl" className="about-facts">
+              <Box>
+                <Text className="fact-value">5+</Text>
+                <Text className="fact-label">Years in industry</Text>
+              </Box>
+              <Box>
+                <Text className="fact-value">2</Text>
+                <Text className="fact-label">Graphics leaders</Text>
+              </Box>
+            </Group>
           </Stack>
           <Stack gap="md" className="body-copy">
             <Text>
@@ -167,10 +195,13 @@ function About() {
   );
 }
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, index }) {
   return (
-    <Card component="article" className={project.spotlight ? 'project-card project-card-featured' : 'project-card'} radius="sm" padding={0}>
-      <Image src={project.image} alt={`${project.title} project preview`} className="project-image" />
+    <Card component="article" className={project.spotlight ? 'project-card project-card-featured reveal' : 'project-card reveal'} radius="sm" padding={0}>
+      <Box className="project-media">
+        <Image src={project.image} alt={`${project.title} project preview`} className="project-image" />
+        <Text className="project-number">{String(index + 1).padStart(2, '0')}</Text>
+      </Box>
       <Stack gap="md" className="project-content">
         <Group justify="space-between" align="flex-start" gap="sm">
           <Box className="project-title-block">
@@ -199,21 +230,21 @@ function Projects() {
       <Container size="xl">
         <Group justify="space-between" align="flex-end" className="section-heading">
           <Box>
-            <Text className="eyebrow">Projects</Text>
+            <SectionLabel index="04">Projects</SectionLabel>
             <Title order={2}>Projects that span graphics, games, and web apps.</Title>
           </Box>
           <Anchor href={links.github} target="_blank" rel="noreferrer" className="section-link">
             More on GitHub
           </Anchor>
         </Group>
-        <SimpleGrid cols={{ base: 1, md: 3 }} spacing="lg">
-          {featured.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+        <Box className="featured-projects">
+          {featured.map((project, index) => (
+            <ProjectCard key={project.title} project={project} index={index} />
           ))}
-        </SimpleGrid>
+        </Box>
         <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="lg" mt="lg">
-          {supporting.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+          {supporting.map((project, index) => (
+            <ProjectCard key={project.title} project={project} index={featured.length + index} />
           ))}
         </SimpleGrid>
       </Container>
@@ -226,18 +257,19 @@ function Experience() {
     <Box id="experience" component="section" className="section experience-band">
       <Container size="xl">
         <Box className="section-heading">
-          <Text className="eyebrow">Experience</Text>
+          <SectionLabel index="03">Experience</SectionLabel>
           <Title order={2}>Building graphics systems, compilers, and engineering tools.</Title>
         </Box>
         <Stack gap={64} className="experience-list">
-          {experienceData.map((experience) => (
+          {experienceData.map((experience, index) => (
             <SimpleGrid
               key={`${experience.company}-${experience.title}`}
               cols={{ base: 1, md: 2 }}
               spacing={{ base: 28, md: 52 }}
-              className="experience-entry"
+              className="experience-entry reveal"
             >
               <Stack gap="md">
+                <Text className="experience-index">{String(index + 1).padStart(2, '0')}</Text>
                 <Box>
                   <Title order={3} className="experience-title">{experience.title}</Title>
                   <Text className="role-company">{experience.company}</Text>
@@ -279,12 +311,13 @@ function Skills() {
     <Box id="skills" component="section" className="section">
       <Container size="xl">
         <Box className="section-heading">
-          <Text className="eyebrow">Skills</Text>
+          <SectionLabel index="02">Expertise</SectionLabel>
           <Title order={2}>A practical toolkit for building interactive software.</Title>
         </Box>
         <SimpleGrid cols={{ base: 1, sm: 2, lg: 4 }} spacing="lg">
-          {skillsData.map((skill) => (
-            <Paper key={skill.title} className="skill-panel" radius="sm">
+          {skillsData.map((skill, index) => (
+            <Paper key={skill.title} className="skill-panel reveal" radius="sm">
+              <Text className="skill-index">{String(index + 1).padStart(2, '0')}</Text>
               <Group gap="sm" mb="md">
                 <ThemeIcon variant="light" radius="sm">
                   <IconCode size={18} />
@@ -304,9 +337,9 @@ function Education() {
   return (
     <Box id="education" component="section" className="section education-band">
       <Container size="xl">
-        <SimpleGrid cols={{ base: 1, md: 2 }} spacing={{ base: 28, md: 52 }}>
+        <SimpleGrid cols={{ base: 1, md: 2 }} spacing={{ base: 28, md: 52 }} className="reveal">
           <Box>
-            <Text className="eyebrow">Education</Text>
+            <SectionLabel index="05">Education</SectionLabel>
             <Title order={2}>{educationData.title}</Title>
             <Group mt="lg" gap="sm">
               <Badge leftSection={<IconSchool size={14} />} variant="filled" radius="sm">
@@ -331,10 +364,13 @@ function Footer() {
   return (
     <Box component="footer" className="footer">
       <Container size="xl">
-        <Group justify="space-between" align="center" gap="md" className="footer-inner">
+        <Group justify="space-between" align="flex-end" gap="xl" className="footer-inner">
           <Box>
+            <Text className="eyebrow"><span>06</span>Contact</Text>
             <Title order={2}>Let's build something visual.</Title>
-            <Text c="dimmed">Open to software, graphics, and web engineering opportunities.</Text>
+            <Anchor href={links.email} className="footer-email">
+              vinay.komaravolu@gmail.com <IconArrowUpRight size={22} />
+            </Anchor>
           </Box>
         </Group>
       </Container>
@@ -398,6 +434,24 @@ function SectionNavigator() {
 }
 
 export default function App() {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 },
+    );
+
+    elements.forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <Header />
